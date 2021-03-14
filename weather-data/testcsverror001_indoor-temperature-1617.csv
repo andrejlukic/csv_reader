@@ -1,0 +1,33 @@
+﻿"DateTime","Humidity","Temperature","Temperature_range (low)","Temperature_range (high)"
+# Comment
+# Comment
+# Two correct lines:
+
+"2016-10-09 00:00:00",54,21.93,21,22.8
+"2016-10-10 00:00:00",52,21.77,20.4,23.6
+
+# Missing quote in first column:
+"2016-10-12 00:00:00,51,21.44,20,23.6
+
+# additional quote in second column:
+"2016-10-14 00:00:00",52",21.02,19.6,22.6
+
+# quoted string in second column:
+"2016-10-14 00:00:00", 52"string", 21.02,19.6,22.6
+
+# Empty characters in second column:
+"2016-10-14 00:00:00", 52      , 21.02,19.6,22.6
+
+# Additional delimiter at the end:
+"2016-10-14 00:00:00", 52"string", 21.02,19.6,22.6,
+
+# Columns missing:
+"2016-10-14 00:00:00", 
+
+# Empty columns:
+,,,,
+
+# Empty date:
+"", 52"string", 21.02,19.6,22.6
+
+
