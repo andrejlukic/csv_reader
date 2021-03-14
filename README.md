@@ -59,7 +59,7 @@ This reader supports quoted or unquoted fields, escaped characters, comments, CS
 The implementation of this CSV reader is based on the finite state automaton. The inspiration for the implementation was an article [Why to build your own CSV Parser](https://www.codeproject.com/Articles/1175263/Why-to-Build-Your-Own-CSV-Parser-or-Maybe-Not) by [Tomas Takac](https://www.codeproject.com/script/Membership/View.aspx?mid=571194)
  who wrote a very capable CSV parser based on the FSM concept in C#. My implementation follows the same principle of the finite state machine but it's simplified. To avoid running into troubles when running the code on different operating systems the decision was made to leave as much as possible of the file handling to Python system libraries, e.g. line endings that vary between operating systems, EOF / EOL / BOM. The following diagram describes the automaton: 
 
-![Finite State Machine diagram](media/FSM diagram.png "Finite State Machine diagram")
+![Finite State Machine diagram](media/FSM_diagram.png "Finite State Machine diagram")
 
 
 ### Code description
